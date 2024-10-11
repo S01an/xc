@@ -7,9 +7,9 @@ blog({
   avatar: "https://smms.app/image/e6vT84nXPDmgkBL",
   avatarClass: "rounded-full",
   links: [
-    { title: "Email", url: "mailto:bot@deno.com" },
-    { title: "GitHub", url: "https://github.com/denobot" },
-    { title: "Twitter", url: "https://twitter.com/denobot" },
+    { title: "Email", url: "mailto:s01an.xc@gmail.com" },
+    { title: "GitHub", url: "https://github.com/S01an" },
+    { title: "Twitter", url: "https://x.com/Solan_xc" },
   ],
   lang: "zh",
 });
