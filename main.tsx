@@ -1,11 +1,10 @@
-import blog, { redirects } from "https://deno.land/x/blog/blog.tsx";
-import { unocss_opts } from "./unocss.ts";
+import blog from "https://deno.land/x/blog/blog.tsx";
 
 blog({
   author: "s01an",
   title: "s01an'Blog",
   description: "人望山 鱼窥荷",
-  avatar: "https://smms.app/image/e6vT84nXPDmgkBL",
+  avatar: "https://s2.loli.net/2024/10/11/pDxIYT59tCvWikg.jpg",
   avatarClass: "rounded-full",
   links: [
     { title: "Email", url: "mailto:s01an.xc@gmail.com" },
@@ -13,14 +12,4 @@ blog({
     { title: "X", url: "https://x.com/Solan_xc" },
   ],
   lang: "zh",
-  dateFormat: (date) =>
-    date.toISOString().split("T")[0], // 改为 ISO 8601 格式
-  middlewares: [
-    redirects({
-      "/foo": "/my_post",
-      "bar": "my_post2",
-    }),
-  ],
-  unocss: unocss_opts, // check https://github.com/unocss/unocss
-  favicon: "favicon.ico",
 });
