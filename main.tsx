@@ -15,6 +15,10 @@ blog({
   style: `
     body {
       background-color: white;
+      color: black; /* 设置字体颜色为黑色 */
+    }
+    a {
+      color: blue; /* 设置链接颜色为蓝色 */
     }
   `,
 });
