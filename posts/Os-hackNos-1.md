@@ -1,5 +1,5 @@
 ---
-title: Kioptix Level 1
+title: Os-hackNos-1
 publish_date: 2024-10-11
 ---
 
