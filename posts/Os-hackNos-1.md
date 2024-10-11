@@ -1,6 +1,6 @@
 ---
 title: Os-hackNos-1
-publish_date: 2024-10-11
+publish_date: 2024-10-12
 ---
 
 # 搭建
