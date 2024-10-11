@@ -1,4 +1,5 @@
-import blog from "https://deno.land/x/blog/blog.tsx";
+import blog, { redirects } from "https://deno.land/x/blog/blog.tsx";
+import { unocss_opts } from "./unocss.ts";
 
 blog({
   author: "s01an",
@@ -9,7 +10,17 @@ blog({
   links: [
     { title: "Email", url: "mailto:s01an.xc@gmail.com" },
     { title: "GitHub", url: "https://github.com/S01an" },
-    { title: "Twitter", url: "https://x.com/Solan_xc" },
+    { title: "X", url: "https://x.com/Solan_xc" },
   ],
   lang: "zh",
+  dateFormat: (date) =>
+    date.toISOString().split("T")[0], // 改为 ISO 8601 格式
+  middlewares: [
+    redirects({
+      "/foo": "/my_post",
+      "bar": "my_post2",
+    }),
+  ],
+  unocss: unocss_opts, // check https://github.com/unocss/unocss
+  favicon: "favicon.ico",
 });
