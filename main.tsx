@@ -12,4 +12,9 @@ blog({
     { title: "X", url: "https://x.com/Solan_xc" },
   ],
   lang: "zh",
+  style: `
+    body {
+      background-color: white;
+    }
+  `,
 });
